@@ -1,0 +1,15 @@
+@import url(/css/lib/s-fonts.css);
+
+
+@import url(http://lsb.local/package/lsb/external/design/responsive/css/lib/smartphone/s-page.css);
+@import url(http://lsb.local/package/lsb/external/design/responsive/css/lib/smartphone/s-header.css);
+@import url(http://lsb.local/package/lsb/external/design/responsive/css/lib/smartphone/s-footer.css);
+
+@import url(http://lsb.local/package/lsb/external/design/responsive/css/lib/smartphone/s-content.css);
+@import url(http://lsb.local/package/lsb/external/design/responsive/css/lib/smartphone/s-form.css);
+@import url(http://lsb.local/package/lsb/external/design/responsive/css/lib/smartphone/s-form-addition.css);
+
+@import url(http://lsb.local/package/lsb/external/design/responsive/css/lib/smartphone/s-article.css);
+@import url(http://lsb.local/package/lsb/external/design/responsive/css/lib/smartphone/s-articles.css);
+
+@import url(/css/lib/smartphone/s-campaign.css);

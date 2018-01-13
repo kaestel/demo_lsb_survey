@@ -1,0 +1,560 @@
+html {height: 100%;}
+body {background: #f4f5f6 url(/img/gx_loader.gif) no-repeat center center; height: 100%;}
+#page {display: none;}
+
+
+body.ready {background-image: none;}
+
+#page {background: #ffffff url(/img/gx_gradient.png) repeat-x 0 85px;}
+#header {height: 85px;}
+#header ul.servicenavigation > li.home {top: 10px;
+	background: transparent url(/img/logo-desktop.png) no-repeat 5px center;
+}
+#header ul.servicenavigation > li.home a {width: 261px;}
+
+
+#navigation {display: none;}
+#logofooter {border-top: 1px solid #989898;}
+#logofooter h2 {background-image: url(/img/logo-desktop.png);}
+#footer {display: none;}
+
+
+#content .scene.campaign {}
+#content .scene.campaign p {font-size: 16px;}
+#content .scene.campaign li {font-size: 16px;}
+#content .scene.campaign ul.actions {text-align: center;}
+#content .scene.campaign ul.actions li a {height: 43px; padding-top: 14px;}
+
+
+#content .scene.campaign div.questionaire {position: relative;}
+
+#content .scene.campaign div.questionaire.active { overflow: hidden;
+	background: #db061f url(/img/bg_questionaire_intro.png) no-repeat center center;
+	
+}
+
+@media (min-width: 1260px) {
+	#content .scene.campaign div.questionaire {height: 630px;}
+
+	#content .scene.campaign div.intro {width: 960px; margin: 0 auto;}
+	#content .scene.campaign div.section.halfs {width: 960px; margin: 0 auto;}
+	#content .scene.campaign div.section.student {width: 960px; margin: 0 auto;}
+
+	#content .scene.campaign div.section.findcenter {width: 480px !important; margin-left: 150px !important;}
+	#content .scene.campaign div.callme {width: 480px !important; margin-right: 150px !important;}
+
+	#content .scene.campaign div.questionaire ul.images li div.image {height: 315px}
+}
+@media (min-width: 960px) and (max-width: 1259px) {
+	#content .scene.campaign div.questionaire {height: 480px;}
+	#content .scene.campaign div.questionaire ul.images li div.image {height: 240px}
+}
+@media (max-width: 959px) {
+	#content .scene.campaign div.questionaire {height: 378px;}
+	#content .scene.campaign div.questionaire ul.images li div.image {height: 189px}
+}
+
+#content .scene.campaign div.questionaire div.quiz_intro {z-index: 10; height: 260px; width: 260px;  position: absolute; cursor: pointer; overflow: hidden; top: 50%; left: 50%; margin-left: -130px; margin-top: -130px; opacity: 0;}
+#content .scene.campaign div.questionaire div.quiz_intro h2 {text-align: center; border-radius: 130px; background: #e30613; width: 100%; height: 100%; padding: 0;}
+#content .scene.campaign div.questionaire div.quiz_intro h2 span {position: absolute; top: 0; left: 0; width: 180px; padding: 110px 40px 40px; height: 110px; font-size: 24px; color: #ffffff; display: block;
+	background: transparent url(/img/gx_present.png) no-repeat center 20px;
+}
+#content .scene.campaign div.questionaire div.quiz_intro h2 span.backside {padding: 50px 40px 100px;
+	background: transparent url(/img/gx_prize.png) no-repeat center 145px;
+}
+/*
+#content .scene.campaign div.questionaire div.quiz_intro.active h2 span.backside {display: block;}
+*/
+#content .scene.campaign div.questionaire ul.images {list-style: none; padding: 0; margin: 0; font-size: 0;}
+#content .scene.campaign div.questionaire ul.images li {width: 25%; display: inline-block; vertical-align: top; padding: 0; opacity: 0;}
+
+#content .scene.campaign div.questionaire ul.images li div.image {position: relative;}
+#content .scene.campaign div.questionaire ul.images li img {width: 100%; position: absolute; top: 0; left: 0; z-index: 3;}
+#content .scene.campaign div.questionaire ul.images li div.backside {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2;}
+#content .scene.campaign div.questionaire ul.images li.active div.backside {background: #db061f;}
+
+#content .scene.campaign div.questionaire div.questionaire_intro {display: none; z-index: 10; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+#content .scene.campaign div.questionaire div.questionaire_intro div.table {display: table; height: 100%; width: 100%;}
+#content .scene.campaign div.questionaire div.questionaire_intro div.cell {display: table-cell; vertical-align: middle;}
+
+#content .scene.campaign div.questionaire div.questionaire_intro h2 {padding: 0 0 25px; text-align: center; color: #ffffff; font-size: 72px;}
+#content .scene.campaign div.questionaire div.questionaire_intro ul.actions {text-align: center; padding: 0;}
+#content .scene.campaign div.questionaire div.questionaire_intro ul.actions li {padding: 0;}
+#content .scene.campaign div.questionaire div.questionaire_intro ul.actions li a {padding: 15px 50px; height: auto; border-radius: 5px; color: #333333; font-size: 18px; background: #ffffff; display: block;}
+#content .scene.campaign div.questionaire div.questionaire_intro p {padding: 30px 0 0; text-align: center; color: #ffffff; font-size: 16px;}
+#content .scene.campaign div.questionaire div.questionaire_intro p.terms {position: absolute; bottom: 0; left: 0; width: 100%; box-sizing: border-box; padding: 10px 50px; font-size: 12px;}
+#content .scene.campaign div.questionaire div.question_counter {z-index: 10; position: absolute; top: 15px; right: 15px; margin: 0; padding: 0; font-size: 14px; color: #ffffff;}
+
+#content .scene.campaign div.questionaire ul.questions {display: none; z-index: 9; position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0;}
+#content .scene.campaign div.questionaire ul.questions > li {display: none; z-index: 9; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+#content .scene.campaign div.questionaire ul.questions > li ul.options {margin: 0 190px; padding: 0; text-align: center; list-style: none;}
+#content .scene.campaign div.questionaire ul.questions > li ul.options li {display: inline-block; vertical-align: top; width: 320px; color: #ffffff; border-bottom: 1px solid #ed838f; text-align: left; cursor: pointer;
+	background: transparent url(/img/gx_radio.png) no-repeat center center;
+}
+#content .scene.campaign div.questionaire ul.questions > li ul.options li:hover {background-color: #e2384c;}
+#content .scene.campaign div.questionaire ul.questions > li.submitted ul.options li:hover {background-color: transparent; cursor: default;}
+#content .scene.campaign div.questionaire ul.questions > li ul.options li.selected {
+	background-image: url(/img/gx_radio_selected.png);
+}
+
+#content .scene.campaign div.questionaire ul.questions > li h3 {color: #ffffff; font-size: 24px; text-align: center; padding: 0 70px;}
+#content .scene.campaign div.questionaire ul.questions > li.q1 {
+	background-image: url(/img/gx_q1.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q2 {
+	background-image: url(/img/gx_q2.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q3 {
+	background-image: url(/img/gx_q3.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q4 {
+	background-image: url(/img/gx_q4.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q5 {
+	background-image: url(/img/gx_q5.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q6 {
+	background-image: url(/img/gx_q6.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q7 {
+	background-image: url(/img/gx_q7.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q8 {
+	background-image: url(/img/gx_q8.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q9 {
+	background-image: url(/img/gx_q9.png);
+}
+#content .scene.campaign div.questionaire ul.questions > li.q10 {
+	background-image: url(/img/gx_q10.png);
+}
+
+#content .scene.campaign div.questionaire div.answer {z-index: 11; position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0; font-size: 0;}
+#content .scene.campaign div.questionaire div.answer div.back {z-index: 11; position: absolute; bottom: 15px; left: 18px; margin: 0; padding: 0; font-size: 14px; color: #ffffff; cursor: pointer;}
+#content .scene.campaign div.questionaire div.answer div.back span {font-size: 18px;}
+
+
+#content .scene.campaign div.questionaire div.row {display: block; position: relative;}
+#content .scene.campaign div.questionaire div.row.r1 {width: 500px; margin: 0 auto 30px;
+	background-position: 0 20px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: 60px auto;
+}
+#content .scene.campaign div.questionaire div.row.r2 div.column.c2 {border-left: none;
+	
+}
+#content .scene.campaign div.questionaire div.row.r2 div.column.c2 .table {display: table; height: 100%; width: 100%;}
+#content .scene.campaign div.questionaire div.row.r2 div.column.c2 .cell {display: table-cell; vertical-align: middle;}
+
+
+#content .scene.campaign div.questionaire div.column {display: inline-block; vertical-align: top; position: relative; height: 100%;}
+#content .scene.campaign div.questionaire div.column.c1 {border-right: 1px solid #ffffff;}
+#content .scene.campaign div.questionaire div.column.c2 {
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+#content .scene.campaign div.questionaire div.row.r1 {
+}
+
+
+/* COLUMN 1 */
+#content .scene.campaign div.questionaire div.answer div.pie {height: 315px; position: relative;}
+#content .scene.campaign div.questionaire div.answer div.pie canvas {height: 100%; width: 100%;}
+#content .scene.campaign div.questionaire div.answer div.pie h2 {position: absolute; top: 80px; left: 0; width: 100%; text-align: center; padding: 0; font-size: 26px;}
+#content .scene.campaign div.questionaire div.answer div.pie p {position: absolute; color: #ffffff; top: 115px; left: 0; width: 100%; text-align: center; padding: 0; font-size: 14px; line-height: 15px;}
+#content .scene.campaign div.questionaire div.answer ul.options {padding: 0 45px; margin: 0; list-style: none;}
+#content .scene.campaign div.questionaire div.answer ul.options li {color: #ffffff; text-align: left; padding: 6px 0; overflow: hidden;}
+#content .scene.campaign div.questionaire div.answer ul.options li span {display: inline-block; vertical-align: top; width: 320px; font-size: 14px; line-height: 1.25em;}
+#content .scene.campaign div.questionaire div.answer ul.options li span.percent {width: 45px; text-align: right;}
+#content .scene.campaign div.questionaire div.answer ul.options li span.color {width: 10px; height: 10px; margin: 4px 11px 0 0; border-radius: 5px;}
+#content .scene.campaign div.questionaire div.answer ul.options li.o1 span.color {background-color: #ffffff;}
+#content .scene.campaign div.questionaire div.answer ul.options li.o2 span.color {background-color: #e9e7e8;}
+#content .scene.campaign div.questionaire div.answer ul.options li.o3 span.color {background-color: #e5898a;}
+#content .scene.campaign div.questionaire div.answer ul.options li.o4 span.color {background-color: #940a0a;}
+#content .scene.campaign div.questionaire div.answer ul.options li.o5 span.color {background-color: #4a030b;}
+#content .scene.campaign div.questionaire div.answer ul.options li.o6 span.color {background-color: #000000;}
+
+
+
+/* COLUMN 2 */
+#content .scene.campaign div.questionaire div.answer h4 {font-size: 16px; color: #ffffff; text-align: left; padding: 20px 0 0 90px;}
+#content .scene.campaign div.questionaire div.answer h2 {font-size: 32px; color: #ffffff; padding: 5px 0 5px 90px; text-align: left;}
+
+#content .scene.campaign div.questionaire div.answer ul.actions {/*position: absolute; bottom: 20px; left: 0;*/ width: 100%; padding: 30px 0 0;}
+#content .scene.campaign div.questionaire div.answer ul.actions li {padding: 10px 30px; background: #ffffff; color: #333333; border-radius: 5px; cursor: pointer;}
+
+#content .scene.campaign div.questionaire div.answer.q1 div.row.r1 {
+	background-image: url(/img/gx_q1.png);
+}
+#content .scene.campaign div.questionaire div.answer.q2 div.row.r1 {
+	background-image: url(/img/gx_q2.png);
+}
+#content .scene.campaign div.questionaire div.answer.q3 div.row.r1 {
+	background-image: url(/img/gx_q3.png);
+}
+#content .scene.campaign div.questionaire div.answer.q4 div.row.r1 {
+	background-image: url(/img/gx_q4.png);
+}
+#content .scene.campaign div.questionaire div.answer.q5 div.row.r1 {
+	background-image: url(/img/gx_q5.png);
+}
+#content .scene.campaign div.questionaire div.answer.q6 div.row.r1 {
+	background-image: url(/img/gx_q6.png);
+}
+#content .scene.campaign div.questionaire div.answer.q7 div.row.r1 {
+	background-image: url(/img/gx_q7.png);
+}
+#content .scene.campaign div.questionaire div.answer.q8 div.row.r1 {
+	background-image: url(/img/gx_q8.png);
+}
+#content .scene.campaign div.questionaire div.answer.q9 div.row.r1 {
+	background-image: url(/img/gx_q9.png);
+}
+#content .scene.campaign div.questionaire div.answer.q10 div.row.r1 {
+	background-image: url(/img/gx_q10.png);
+}
+
+#content .scene.campaign div.questionaire div.answer.q10 div.row.r1 h2 {font-size: 20px;}
+
+
+@media (min-width: 1260px) {
+	#content .scene.campaign div.questionaire ul.questions > li {background-position: center 50px; padding: 170px 0 0;}
+	#content .scene.campaign div.questionaire ul.questions > li ul.options {margin: 0 300px;}
+	#content .scene.campaign div.questionaire ul.questions > li ul.options li {padding: 18px 7px 18px 45px; background-position: 12px 20px;}
+
+	#content .scene.campaign div.questionaire div.column {width: 480px; padding: 0 75px;}
+	#content .scene.campaign div.questionaire div.column.c2 {width: 478px; background-position: center 130px;}
+
+	#content .scene.campaign div.questionaire div.row.r1 {width: 600px; margin: 0 auto;
+		background-position: 0 40px;
+	}
+
+	#content .scene.campaign div.questionaire div.answer h4 {padding-top: 40px;}
+	#content .scene.campaign div.questionaire div.answer h2 {height: 112px;}
+	#content .scene.campaign div.questionaire div.answer ul.actions {bottom: 220px;}
+
+	#content .scene.campaign div.questionaire div.answer div.pie h2 {top: 100px; font-size: 50px;}
+	#content .scene.campaign div.questionaire div.answer div.pie p {top: 165px; font-size: 18px;}
+
+}
+@media (min-width: 960px) and (max-width: 1259px) {
+	#content .scene.campaign div.questionaire ul.questions > li {background-position: center 30px; padding: 150px 0 0;}
+	#content .scene.campaign div.questionaire ul.questions > li ul.options li {padding: 13px 7px 13px 45px; background-position: 12px 15px;}
+
+	#content .scene.campaign div.questionaire div.answer div.pie {height: 240px;}
+
+	#content .scene.campaign div.questionaire div.column {width: 480px;}
+	#content .scene.campaign div.questionaire div.column.c2 {width: 478px; background-position: center 130px;}
+
+	#content .scene.campaign div.questionaire div.row.r1 {width: 600px; margin: 0 auto;
+		background-position: 0 40px;
+	}
+
+	#content .scene.campaign div.questionaire div.answer h4 {padding-top: 40px;}
+	#content .scene.campaign div.questionaire div.answer h2 {height: 82px;}
+
+	#content .scene.campaign div.questionaire div.answer div.pie h2 {font-size: 28px; top: 80px;}
+	#content .scene.campaign div.questionaire div.answer div.pie p {font-size: 15px;}
+}
+@media (max-width: 959px) {
+	#content .scene.campaign div.questionaire ul.questions > li {background-position: center 10px; padding: 100px 0 0; background-size: 10% auto;}
+	#content .scene.campaign div.questionaire ul.questions > li ul.options li {padding: 8px 7px 8px 45px; background-position: 12px 10px;}
+
+	#content .scene.campaign div.questionaire div.row.r1 {width: 500px; margin: 0 auto;
+		background-position: 0 20px;
+	}
+	#content .scene.campaign div.questionaire div.column {width: 378px;}
+	#content .scene.campaign div.questionaire div.column.c2 {width: 376px; background-position: center 60px;/* height: 170px;*/}
+
+	#content .scene.campaign div.questionaire div.answer h4 {/*padding: 20px 0 0 80px;*/ font-size: 14px;}
+	#content .scene.campaign div.questionaire div.answer h2 {font-size: 24px; height: 62px;}
+
+	#content .scene.campaign div.questionaire div.answer div.pie {height: 170px;}
+
+	#content .scene.campaign div.questionaire div.answer ul.options {padding: 0 30px;}
+	#content .scene.campaign div.questionaire div.answer ul.options li {padding: 4px 0;}
+	#content .scene.campaign div.questionaire div.answer ul.options li span {font-size: 13px; width: 222px;}
+	#content .scene.campaign div.questionaire div.answer ul.options li span.percent {width: 45px;}
+
+	#content .scene.campaign div.questionaire div.answer div.pie h2 {/*padding-left: 220px;*/box-sizing: border-box; top: 53px; font-size: 22px;}
+	#content .scene.campaign div.questionaire div.answer div.pie p {/*padding-left: 220px;*/box-sizing: border-box; top: 83px; font-size: 13px;}
+}
+
+#content .scene.campaign div.questionaire div.signup {display: none; z-index: 11; position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0; font-size: 0;}
+
+#content .scene.campaign div.questionaire div.signup div.c1 h2 {padding: 60px 50px 0; font-size: 50px; line-height: 52px; color: #ffffff; text-align: center;}
+#content .scene.campaign div.questionaire div.signup div.c1 h3 {padding: 20px 50px 0; font-size: 20px; color: #ffffff; text-align: center;}
+#content .scene.campaign div.questionaire div.signup div.c1 ul.actions {padding: 20px 0 0;}
+#content .scene.campaign div.questionaire div.signup div.c1 ul.actions li.callme a {background: #000000; color: #ffffff; border-color: #000000; height: 33px; padding-top: 9px;}
+
+#content .scene.campaign div.questionaire div.signup div.c2 h2 {padding: 60px 0 0 65px; font-size: 18px; color: #ffffff;}
+#content .scene.campaign div.questionaire div.signup div.c2 form {padding: 20px 0 0;}
+#content .scene.campaign div.questionaire div.signup div.c2 form label {font-size: 14px; color: #ffffff;}
+#content .scene.campaign div.questionaire div.signup div.c2 form label span {display: inline-block; width: 300px; line-height: 1.1em;}
+#content .scene.campaign div.questionaire div.signup div.c2 form div.field {padding: 0 0 10px 65px;}
+#content .scene.campaign div.questionaire div.signup div.c2 form div.field.meeting {padding-top: 10px;}
+#content .scene.campaign div.questionaire div.signup div.c2 form div.string label,
+#content .scene.campaign div.questionaire div.signup div.c2 form div.integer label,
+#content .scene.campaign div.questionaire div.signup div.c2 form div.tel label,
+#content .scene.campaign div.questionaire div.signup div.c2 form div.email label {display: inline-block; vertical-align: top; width: 100px;}
+#content .scene.campaign div.questionaire div.signup div.c2 form div.string input,
+#content .scene.campaign div.questionaire div.signup div.c2 form div.integer input,
+#content .scene.campaign div.questionaire div.signup div.c2 form div.tel input,
+#content .scene.campaign div.questionaire div.signup div.c2 form div.email input {padding: 4px; height: 28px; display: inline-block; vertical-align: top; width: 230px; border: none;}
+/*#content .scene.campaign div.questionaire div.signup div.c2 form input#input_tel,
+#content .scene.campaign div.questionaire div.signup div.c2 form input#input_postal {width: 114px;}
+*/
+#content .scene.campaign div.questionaire div.signup div.c2 ul.actions {padding-top: 20px;}
+#content .scene.campaign div.questionaire div.signup div.c2 ul.actions li input {background: #ffffff; color: #000000; border-color: #ffffff;}
+
+#content .scene.campaign div.questionaire div.signup div.c2 form.loading ul.actions li input {
+	background-image: url(/img/gx_loader.gif);
+	background-position: 15px 6px;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	padding-left: 50px;
+}
+
+#content .scene.campaign div.questionaire div.signup div.c2 form .field input[type="checkbox"] + label::before {border-color: #ffffff; color: #ffffff; font-size: 14px;}
+
+#content .scene.campaign div.questionaire > div.signup div.c2 form div.field.error div.indicator {position: absolute; top: 0; left: 45px;	display: inline-block; vertical-align: top; margin: 2px 0 0; color: #fff; box-sizing: border-box; font-size: 14px;
+	font-family: "SDC-ikoner";
+}
+#content .scene.campaign div.questionaire > div.signup div.c2 form div.field div.help {display: none !important;}
+
+
+#content .scene.campaign div.questionaire div.signup div.c2 form div.checkbox.required {z-index: 2;}
+#content .scene.campaign div.questionaire div.signup div.c2 form div.checkbox.required label {text-decoration: underline;}
+#content .scene.campaign div.questionaire div.signup div.c2 form div.checkbox div.terms {z-index: 10; position: absolute; bottom: 35px; left: 75px; padding: 20px 10px 10px; width: 240px; border: 1px solid #000000; border-radius: 5px; color: #333333; font-size: 13px; display: none;
+	background: #ffffff url(/img/gx_close.png) no-repeat right top;
+}
+#content .scene.campaign div.questionaire div.signup div.c2 form div.checkbox div.terms br {display: none;}
+/*#content .scene.campaign div.questionaire div.signup div.c2 form div.checkbox.hover div.terms {display: block;}*/
+
+
+@media (min-width: 1260px) {
+	#content .scene.campaign div.questionaire div.signup div.c1 h2 {padding-top: 140px;}
+	#content .scene.campaign div.questionaire div.signup div.c2 h2 {padding-top: 140px;}
+
+}
+@media (min-width: 960px) and (max-width: 1259px) {
+
+}
+@media (max-width: 959px) {
+	#content .scene.campaign div.questionaire > div.signup div.c1 h2 {padding: 20px 20px 0; font-size: 38px; line-height: 40px;}
+	#content .scene.campaign div.questionaire > div.signup div.c1 h3 {padding: 20px 20px 0; font-size: 18px;}
+
+	#content .scene.campaign div.questionaire > div.signup div.c2 h2 {padding: 20px 20px 0; font-size: 15px;}
+
+	#content .scene.campaign div.questionaire > div.signup div.c2 form {padding-top: 20px;}
+	#content .scene.campaign div.questionaire > div.signup div.c2 form label {font-size: 12px;}
+	#content .scene.campaign div.questionaire > div.signup div.c2 form label span {width: 265px;}
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.field {padding: 0 0 10px 20px;}
+/*	#content .scene.campaign div.questionaire > div.signup div.c2 form div.field.meeting label {font-size: 14px;}*/
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.string input,
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.integer input,
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.tel input,
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.email input {width: 204px;}
+
+/*	#content .scene.campaign div.questionaire > div.signup div.c2 form input#input_tel,
+	#content .scene.campaign div.questionaire > div.signup div.c2 form input#input_postal {width: 104px;}
+*/
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.string input,
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.integer input,
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.tel input,
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.email input {height: 24px;}
+
+	#content .scene.campaign div.questionaire > div.signup div.c2 ul.actions {padding-top: 0px;}
+	
+	#content .scene.campaign div.questionaire > div.signup div.c2 form div.field.error div.indicator {left: 4px; font-size: 12px;}
+	
+}
+
+#content .scene.campaign div.questionaire > div.receipt {display: none; z-index: 11; position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0; font-size: 0;}
+#content .scene.campaign div.questionaire > div.receipt h2 {padding: 100px 0 25px; text-align: center; color: #ffffff; font-size: 30px;}
+#content .scene.campaign div.questionaire > div.receipt p {padding: 0 0 25px; text-align: center; color: #ffffff; font-size: 16px;}
+
+#content .scene.campaign div.questionaire > div.error {display: none; z-index: 11; position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0; font-size: 0;}
+#content .scene.campaign div.questionaire > div.error h2 {padding: 100px 0 25px; text-align: center; color: #ffffff; font-size: 52px;}
+#content .scene.campaign div.questionaire > div.error p {padding: 0 0 25px; text-align: center; color: #ffffff; font-size: 16px;}
+
+@media (min-width: 1260px) {
+
+	#content .scene.campaign div.questionaire > div.receipt h2 {padding-top: 150px;}
+	#content .scene.campaign div.questionaire > div.error h2 {padding-top: 150px;}
+
+}
+@media (min-width: 960px) and (max-width: 1259px) {
+
+}
+@media (max-width: 959px) {
+
+}
+
+
+#content .scene.campaign div.intro {opacity: 0;}
+#content .scene.campaign div.intro h1 {font-size: 44px; padding-top: 35px;}
+/*#content .scene.campaign div.intro ul.actions {text-align: left;}*/
+#content .scene.campaign div.intro ul.actions li {margin: 10px 10px 0;}
+#content .scene.campaign div.intro ul.actions li a {display: inline-block;}
+#content .scene.campaign div.intro ul.actions li p {padding: 5px 0 0;}
+
+
+#content .scene.campaign div.banner {border: 1px solid #db061f; text-align: center;}
+
+#content .scene.campaign div.banner.save {margin-top: 30px; opacity: 0; position: relative; height: 240px;
+	background-color: #ffffff;
+}
+
+#content .scene.campaign div.banner.save ul.carousel {list-style: none; padding: 0; margin: 0; overflow: hidden; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+#content .scene.campaign div.banner.save ul.carousel li {width: 100%; position: absolute; top: 0; left: 0; padding: 120px 0 0; opacity: 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center 15px;
+}
+
+#content .scene.campaign div.banner.save h2 {font-size: 17px; color: #939393; text-transform: uppercase; padding: 85px 0 0;}
+#content .scene.campaign div.banner.save h3 {font-size: 30px; color: #db061f;}
+#content .scene.campaign div.banner.save li p {color: #db061f; padding-bottom: 30px;}
+#content .scene.campaign div.banner.save > p {position: absolute; bottom: 0; right: 0; padding: 0 10px 8px 0; font-size: 12px; color: #939393;}
+#content .scene.campaign ul.banner_index {text-align: center; list-style: none; margin: 0; padding: 0;}
+#content .scene.campaign ul.banner_index li {display: inline-block; vertical-align: top; padding: 0 !important; line-height: 0; cursor: pointer; width: 14px; height: 14px; background-color: #939393; margin: 10px 14px; border-radius: 7px;}
+#content .scene.campaign ul.banner_index li.selected {background-color: #db061f;}
+
+#content .scene.campaign div.banner.save span.next {z-index: 10; cursor: pointer; border-right: 2px solid #939393; border-top: 2px solid #939393; position: absolute; top: 100px; right: -30px; width: 30px; height: 30px;
+	transform: rotate(45deg);
+}
+#content .scene.campaign div.banner.save span.next:hover {border-color: #db061f;}
+#content .scene.campaign div.banner.save span.prev {z-index: 10; cursor: pointer; border-left: 2px solid #939393; border-bottom: 2px solid #939393; position: absolute; top: 100px; left: -30px; width: 30px; height: 30px;
+	transform: rotate(45deg);
+}
+#content .scene.campaign div.banner.save span.prev:hover {border-color: #db061f;}
+
+#content .scene.campaign div.banner.nurse {background: #db061f; padding: 25px 0; margin-top: 30px; margin-bottom: 50px;}
+#content .scene.campaign div.banner.nurse h2 {color: #ffffff; font-size: 34px;}
+
+
+@media (min-width: 1260px) {
+	#content .scene.campaign div.banner.save li p {padding-left: 150px; padding-right: 150px;}
+}
+@media (min-width: 960px) and (max-width: 1259px) {
+}
+@media (max-width: 959px) {
+	#content .scene.campaign div.banner.save h3 {font-size: 22px;}
+}
+
+
+#content .scene.campaign ul.images.frise1,
+#content .scene.campaign ul.images.frise2 {list-style: none !important; padding: 0 !important; margin: 50px 0 50px !important; font-size: 0;}
+#content .scene.campaign ul.images.frise2 {margin-top: 30px !important;}
+#content .scene.campaign ul.images.frise1 li,
+#content .scene.campaign ul.images.frise2 li {width: 20% !important; display: inline-block !important; vertical-align: top !important; padding: 0 !important;}
+#content .scene.campaign ul.images.frise1 li img,
+#content .scene.campaign ul.images.frise2 li img {width: 100%;}
+
+
+#content .scene.campaign div.section.halfs {font-size: 0;}
+#content .scene.campaign div.section.half {display: inline-block; vertical-align: top; width: 50%;}
+
+#content .scene.campaign div.section div.columns {font-size: 0;}
+#content .scene.campaign div.section div.columns div.column {display: inline-block; vertical-align: top; width: 50%;}
+
+
+#content .scene.campaign div.section h2 {font-size: 37px; color: #db061f;}
+
+#content .scene.campaign div.section.five h2 {padding-top: 0px; padding-left: 100px; font-size: 30px;
+	background: #ffffff url(/img/gx_five.png) no-repeat 15px 11px;
+}
+
+
+#content .scene.campaign div.section.car h2 {padding-top: 0px; padding-left: 115px; font-size: 30px;
+	background: #ffffff url(/img/gx_car.png) no-repeat 15px 10px;
+}
+#content .scene.campaign div.section.car ul.actions li {margin: 10px 20px 0 0;}
+
+
+#content .scene.campaign div.section.student {}
+#content .scene.campaign div.section.student h2 {padding-top: 35px; padding-left: 120px;
+	background: #ffffff url(/img/gx_student.png) no-repeat 20px 0px;
+}
+
+#content .scene.campaign div.section.student ul.actions li {margin: 0 10px 0;}
+
+
+#content .scene.campaign div.section.community h2 {padding-top: 3px; padding-left: 120px; font-size: 30px;
+	background: #ffffff url(/img/gx_community.png) no-repeat 15px 0px;
+}
+#content .scene.campaign div.section.community ul.actions li {margin: 10px 20px 0 0;}
+
+
+#content .scene.campaign ul.images.x4 {list-style: none !important; padding: 0 !important; margin: 0px 20px 0px !important; font-size: 0;}
+#content .scene.campaign ul.images.x4 li {width: 25% !important; display: inline-block !important; vertical-align: top !important; padding: 0 !important;}
+#content .scene.campaign ul.images.x4 li img {width: 100%;}
+
+
+
+/* FIND CENTER */
+
+#content .scene.campaign div.section.findcenter {margin-top: 50px; display: inline-block; vertical-align: top; width: 50%;}
+#content .scene.campaign div.section.findcenter h2 {color: #333333; font-size: 28px;}
+#content .scene.campaign div.section.findcenter h2 span {color: #db061f;}
+
+#content .scene.campaign div.section.findcenter div.center_images {margin: 0 15px; position: relative; border-radius: 5px; overflow: hidden; border: 1px solid #b2b2b2;}
+#content .scene.campaign div.section.findcenter img {width: 100%; border-bottom: 1px solid #b2b2b2;}
+#content .scene.campaign div.section.findcenter div.center_images p {padding: 5px 10px; position: absolute; top: 0; left: 0; background: #ffffff; border-bottom-right-radius: 5px;}
+#content .scene.campaign div.section.findcenter div.center_images p.label_2 {top: 50%;}
+
+#content .scene.campaign div.section.findcenter form {margin: 15px;}
+#content .scene.campaign div.section.findcenter form fieldset {width: 200px; display: inline-block; vertical-align: top;}
+#content .scene.campaign div.section.findcenter form fieldset div.field {padding-left: 0; padding-right: 0;}
+#content .scene.campaign div.section.findcenter form ul.actions {display: inline-block; vertical-align: top; padding-top: 1px;}
+
+
+@media (min-width: 1260px) {
+	#content .scene.campaign div.section.findcenter div.center_images {height: 368px;}
+
+}
+@media (min-width: 960px) and (max-width: 1259px) {
+	#content .scene.campaign div.section.findcenter div.center_images {height: 368px;}
+}
+@media (max-width: 959px) {
+	#content .scene.campaign div.section.findcenter div.center_images {height: 284px;}
+}
+
+
+
+
+/* TODO: Kontakt form */
+
+
+/*#content .scene.campaign div.meeting_splash {width: 150px; height: 150px; background-color: #db061f; border-radius: 75px; position: absolute; top: 0; right: 0; display: none;}
+#content .scene.campaign div.meeting_splash h3 {padding: 20px 10px; font-size: 20px; color: #ffffff; text-align: center;
+	transform: rotate(20deg);
+}
+#content .scene.campaign div.meeting_splash h3 span {font-size: 15px;}
+*/
+#content .scene.campaign div.callme {margin-top: 50px; position: relative; display: inline-block; vertical-align: top; width: 50%;}
+#content .scene.campaign div.callme h1 {color: #333333; font-size: 28px; padding: 15px;}
+#content .scene.campaign div.callme p {}
+#content .scene.campaign div.callme div.receipt {display: none; z-index: 2; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #ffffff;}
+#content .scene.campaign div.callme div.errormessage {z-index: 3; position: absolute; display: table; border: none; top: 0; left: 0; width: 100%; height: 100%; background: #ffffff;}
+#content .scene.campaign div.callme div.errormessage span.cell {display: table-cell; vertical-align: middle; text-align: center;}
+#content .scene.campaign div.callme div.errormessage h3 {color: #e2384c;}
+
+
+#content .scene.campaign div.callme form.loading ul.actions li input {
+	background-image: url(/img/gx_loader.gif);
+	background-position: 15px 6px;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	padding-left: 50px;
+}
+
+body.callmeed #content .scene.campaign div.callme div.receipt {display: block;}
+body.callmeed #content .scene.campaign ul.actions li.callme {display: none;}
+/*#content .scene.campaign div.callme h1 span {color: #db061f;}*/
