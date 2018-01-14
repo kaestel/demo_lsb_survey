@@ -13,19 +13,11 @@
 	<link rel="apple-touch-icon" href="/img/touchicon.png">
 	<link rel="icon" href="/img/favicon.png">
 
-	<!--link type="text/css" rel="stylesheet" media="all" href="/css/seg_<?= $_SESSION["segment"] ?>.css" />
-	<script type="text/javascript" src="/js/seg_<?= $_SESSION["segment"] ?>.js"></script-->
+	<link type="text/css" rel="stylesheet" media="all" href="/css/seg_<?= $_SESSION["segment"] ?>.css" />
+	<script type="text/javascript" src="/js/seg_<?= $_SESSION["segment"] ?>.js"></script>
 
-	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_<?= $_SESSION["segment"] ?>_include.css" />
-	<script type="text/javascript" src="/js/lib/seg_<?= $_SESSION["segment"] ?>_include.js"></script>
-
-	<!--link type="text/css" rel="stylesheet" media="all" href="http://lsb.local/package/lsb/external/design/responsive/css/seg_desktop.css" />
-	<script type="text/javascript" src="http://lsb.local/package/lsb/external/design/responsive/js/seg_desktop.js"></script>
-	<script type="text/javascript" src="http://lsb.local/global-variables.js"></script>
-	
-	<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-WC7HV5');
-	</script-->
+	<!--link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_<?= $_SESSION["segment"] ?>_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_<?= $_SESSION["segment"] ?>_include.js"></script-->
 </head>
 
 <body> 
@@ -92,7 +84,7 @@
 						<li class="option o4">4. Jeg drømmer om at flytte</li>
 					</ul>
 				</li>
-				<!--li class="question q2">
+				<li class="question q2">
 					<h3>Pension - tror du, at du sparer mere <br/>eller mindre op end gennemsnittet?</h3>
 					<ul class="options">
 						<li class="option o1">1. Mere</li>
@@ -168,7 +160,7 @@
 						<li class="option o1">1. Ja, det er, fordi banken samarbejder med en række faglige organisationer blandt andet DM</li>
 						<li class="option o2">2. Nej</li>
 					</ul>
-				</li-->
+				</li>
 			</ul>
 
 			<div class="signup">
